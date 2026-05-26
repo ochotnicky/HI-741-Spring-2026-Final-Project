@@ -722,14 +722,6 @@ try:
 except FileExistsError:
     pass
 
-# The following lines are for local execution of the Tkinter GUI.
-# They will cause an error in environments without a display server (like Colab).
-# To run this Tkinter app, save the code to a .py file and run it locally.
-# root = tk.Tk()
-# login_app = LoginApp(root)
-# root.mainloop()
-print("Tkinter LoginApp class defined. To run the GUI, execute this script locally.")
-
 usage_log_df = pd.read_csv('usage_log.csv')
 display(usage_log_df)
 
